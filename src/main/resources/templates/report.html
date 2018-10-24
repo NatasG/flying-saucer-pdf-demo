@@ -1,0 +1,27 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title><span th:text="Report"></span></title>
+</head>
+<body class="">
+<span>Messages：</span>
+<span th:text="${msg}" style="color: red"></span>
+<table style="border: 1px solid brown">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Tom</td>
+        <td>29</td>
+    </tr>
+    <tr>
+        <td>Jim</td>
+        <td>20</td>
+    </tr>
+
+</table>
+<img th:src="${imageSrc}"/>
+</body>
+</html>
